@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simple login form</title>
+   
+      <link rel="stylesheet" href="css/style.css">
+
+      <script type="text/javascript" >
+          function validar() {
+              var user= document.getElementById("username").value;
+              var pass= document.getElementById("password").value;
+
+              if (user == "123" && pass == "123"){
+                  alert ("Datos validos")}
+              else{
+                  alert ("Verifique sus datos")}
+          }
+      </script>
+</head>
+
+<body>
+
+  <div class="container">
+  <div class="login">
+  	<h1 class="login-heading">
+      <strong>Welcome 2chat!</strong></h1>
+
+      <form method="post">
+        <input type="text" name="username" placeholder="Username" id="username" required="required" class="input-txt" />
+          <input type="password" name="password" placeholder="Password" id="password" required="required" class="input-txt" />
+          <div class="login-footer">
+             <a href="#" class="lnk">
+              <span class="icon">I forgot my password?</span>
+            </a>
+            <button type="submit" href="2chat.html"  name="btnVerifica" id="btnVerifica" onclick="validar()" class="btn btn--right">Login</button>
+
+          </div>
+      </form>
+  </div>
+</div>
+  
+</body>
+
+</html>
