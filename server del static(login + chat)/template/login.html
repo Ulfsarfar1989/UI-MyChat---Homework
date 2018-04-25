@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simple login form</title>
+      <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+
+  <div class="container">
+  <div class="login">
+  	<h1 class="login-heading">
+      <strong>Welcome 2chat!</strong></h1>
+
+      <form action="" class="form-inline" method="post">
+        <input type="text" name="username" class="form-control" placeholder="Username" id="username" value="{{request.form.username}}">
+        <input type="password" name="password" class="form-control" placeholder="Password" id="password" class="input-txt" value="{{request.form.password}}">
+          <div class="login-footer">
+             <a href="#" class="lnk">
+              <span class="icon">I forgot my password?</span>
+            </a>
+            <input class="btn btn--right" type="submit" value="Login">
+
+          </div>
+      </form>
+      <p>{{error}}</p>
+
+  </div>
+</div>
+</body>
+</html>
